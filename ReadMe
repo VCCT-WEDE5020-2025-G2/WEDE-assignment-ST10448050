@@ -1,36 +1,81 @@
-🚀 How to Run
+🚀 Getting Started
 
-Download or clone this repository:
+These instructions will get the website up and running on your local machine:
+
+Clone the repository
 
 git clone https://github.com/WEDE-part-1/urban-threads.git
 
 
-Open the project folder.
+Open the project folder on your computer.
 
-Open index.html in any web browser (Chrome, Firefox, Edge, etc.).
+Launch the site by opening index.html in any modern web browser (Chrome, Firefox, Edge, etc.).
 
-Use the navigation menu to explore the other pages.
+Explore the pages using the navigation links in the header.
+
+No external build tools are required – all CSS and JavaScript are loaded locally.
+
+🧩 Project Structure
+urban-threads/
+│
+├── index.html        # Home page with search, news/events, gallery and map
+├── about.html        # Company mission, strengths, weaknesses, improvements
+├── products.html     # Operations timeline and budget overview
+├── enquiry.html      # Enquiry form with validation and dynamic response
+├── contact.html      # Contact information and general message form
+│
+├── css/
+│   └── style.css     # Global styles, layout, forms, gallery, accordion
+│
+└── js/
+    └── main.js       # Interactivity: search filter, accordion, dynamic content,
+                      # gallery lightbox, map, enquiry & contact form handling
+
+✨ Features
+
+Responsive Design: Works well on desktops, tablets and mobile devices.
+
+Unified Navigation: Consistent header and footer across all pages.
+
+Dynamic Collections Search: Filter products and services on the home page using the search box.
+
+Accordion Sections: Expandable descriptions for each collection.
+
+News & Events Feed: Dynamically loaded announcements and promotions.
+
+Image Gallery with Lightbox: Click thumbnails to view full‑size images in an overlay.
+
+Interactive Map: Embedded OpenStreetMap via Leaflet showing the store location.
+
+Enquiry Form: Collects visitor enquiries (product, service, collaboration, general) with client‑side validation and simulated asynchronous submission.
+
+Contact Form: Allows customers to compose a general message, feedback or support request; generates a ready‑to‑send email link.
+
+Operations & Budget Overview: Timeline and startup costs clearly laid out in tables and lists.
+
+Semantic HTML & SEO: Proper use of headings, metadata, alt text, and clean URLs to improve search engine indexing.
+
+Reusable CSS & JavaScript: Shared styling and scripts across all pages for consistency and easier maintenance.
 
 🧪 Testing & Debugging
 
-Navigation links checked to ensure they work across all pages.
+Navigation links have been tested across all pages.
 
-HTML validated for structure and indentation.
+Forms are validated client‑side and provide user feedback.
+
+HTML and CSS conform to modern standards and have been manually checked for structure and indentation.
+
+JavaScript functions are modular and only run on pages where needed (e.g. map initialises only on the home page).
 
 💡 Notes
 
-This project focuses on HTML only (no CSS or JavaScript).
+The project now uses CSS for layout, typography and responsiveness, and JavaScript for interactivity. Additional enhancements (e.g. server‑side processing) can be implemented in the future.
 
-Comments are included in the code for readability and documentation.
+Placeholder images in the gallery (from picsum.photos) can be replaced with your own store photos.
 
-Additional styling and interactivity can be added in the future using CSS and JS.
-
-Part 2
-
-
+No external dependencies are required beyond Leaflet (loaded via CDN) for map rendering.
 
 📖 Author
 
 Philip Wagner
-
 Module: Web Development / Internet Application
