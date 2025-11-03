@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Threads - Contact</title>
+    <title>Urban Threads – Contact Us</title>
+    <meta name="description" content="Reach out to Urban Threads for support, feedback or general enquiries.">
+    <meta name="keywords" content="Urban Threads, contact, support, feedback, message">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>Urban Threads</h1>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="products.html">Products</a> |
-            <a href="enquiry.html">Enquiry</a> |
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Operations</a>
+            <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
@@ -22,20 +24,49 @@
         <h2>Contact Us</h2>
         <p><strong>Address:</strong> 123 Fashion Street, City Hub</p>
         <p><strong>Email:</strong> info@urbanthreads.co.za</p>
-        <p><strong>Phone:</strong> +27 32 748 1950</p>
+        <p><strong>Phone:</strong> +27&nbsp;32&nbsp;748&nbsp;1950</p>
 
-        <h3>Website Features & UX</h3>
+        <h3>Website Features &amp; User Experience</h3>
         <ul>
-            <li>Responsive design for all devices</li>
-            <li>Product filters and secure checkout</li>
-            <li>User accounts with rewards</li>
-            <li>Blog with fashion tips and trends</li>
+            <li>Responsive design across all devices</li>
+            <li>Product filters, secure checkout and customer accounts</li>
+            <li>Reward programme for loyal shoppers</li>
+            <li>Fashion blog with style tips and trends</li>
             <li>Social media integration</li>
         </ul>
+
+        <h3>Send Us a Message</h3>
+        <p>Please use this form for general comments, feedback or support requests. Fields marked with * are required.</p>
+        <form id="contactForm" action="#" method="post" novalidate>
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="type">Message Type *</label>
+            <select id="type" name="type" required>
+                <option value="General">General</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Support">Support</option>
+                <option value="Collaboration">Collaboration</option>
+            </select>
+
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Prepare Email</button>
+        </form>
+        <div id="contactResult"></div>
     </main>
 
     <footer>
         <p>&copy; 2025 Urban Threads</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
