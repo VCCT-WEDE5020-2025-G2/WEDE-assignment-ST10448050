@@ -3,39 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Threads - Enquiry</title>
+    <title>Urban Threads – Enquiry</title>
+    <meta name="description" content="Submit an enquiry about Urban Threads products, services, or collaboration opportunities.">
+    <meta name="keywords" content="Urban Threads, enquiry, product enquiry, service enquiry, collaboration">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>Urban Threads</h1>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="products.html">Products</a> |
-            <a href="enquiry.html">Enquiry</a> |
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Operations</a>
+            <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
         <h2>Enquiry Form</h2>
-        <form action="#" method="post">
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+        <p>If you have questions about our products, services, or would like to discuss a collaboration or partnership, please fill out the form below. Required fields are marked with *.</p>
+        <form id="enquiryForm" action="#" method="post" novalidate>
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
 
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
 
-            <label for="message">Your Message:</label><br>
-            <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" pattern="[+]?[0-9]{6,15}" placeholder="e.g., +27123456789" required>
 
-            <input type="submit" value="Submit Enquiry">
+            <label for="type">Enquiry Type *</label>
+            <select id="type" name="type" required>
+                <option value="product">Product</option>
+                <option value="service">Service</option>
+                <option value="collaboration">Collaboration/Sponsorship</option>
+                <option value="general">General</option>
+            </select>
+
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit Enquiry</button>
         </form>
+        <div id="enquiryResult"></div>
     </main>
 
     <footer>
         <p>&copy; 2025 Urban Threads</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
