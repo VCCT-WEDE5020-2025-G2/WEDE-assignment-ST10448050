@@ -3,32 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Threads - Home</title>
+    <title>Urban Threads – Home</title>
+    <meta name="description" content="Urban Threads offers curated, affordable fashion for university students and young professionals. Shop trendy clothes, accessories and enjoy our latest news and events.">
+    <meta name="keywords" content="Urban Threads, fashion, clothing, boutique, students, young professionals, South Africa">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
 <body>
-    <!-- Header with navigation -->
     <header>
         <h1>Urban Threads</h1>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="products.html">Products</a> |
-            <a href="enquiry.html">Enquiry</a> |
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Operations</a>
+            <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- Main content -->
     <main>
-        <h2>Welcome to Urban Threads</h2>
-        <p>Urban Threads is a boutique urban clothing store targeting university students and young professionals. 
-        We offer trendy yet affordable apparel, combining in-store and online shopping to become the go-to fashion hub in our city.</p>
+        <section>
+            <h2>Welcome to Urban Threads</h2>
+            <p>We are a boutique urban clothing store dedicated to bringing trendy, affordable apparel and accessories to university students and young professionals. Explore our offerings, read our latest news, and discover upcoming events.</p>
+        </section>
+
+        <section>
+            <h2>Our Collections</h2>
+            <input type="text" id="searchBox" placeholder="Search collections…" aria-label="Search collections">
+            <div id="itemList">
+                <div class="accordion-item">
+                    <div class="accordion-header">Streetwear</div>
+                    <div class="accordion-content"><p>Hoodies, oversized tees and joggers inspired by urban street culture.</p></div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Denim</div>
+                    <div class="accordion-content"><p>Denim jeans, jackets and skirts in various cuts and washes.</p></div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Sneakers</div>
+                    <div class="accordion-content"><p>Popular brands and limited‑edition kicks to complement your style.</p></div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Accessories</div>
+                    <div class="accordion-content"><p>Hats, bags, jewelry and other finishing touches for any outfit.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>News &amp; Events</h2>
+            <div id="dynamicContent"></div>
+        </section>
+
+        <section>
+            <h2>Gallery</h2>
+            <p>Click on an image to view it larger.</p>
+            <div class="gallery">
+                <img src="https://picsum.photos/id/1050/400/250" alt="Urban Threads storefront at sunset">
+                <img src="https://picsum.photos/id/1039/400/250" alt="Model wearing Urban Threads hoodie">
+                <img src="https://picsum.photos/id/1010/400/250" alt="Denim collection on display">
+                <img src="https://picsum.photos/id/1024/400/250" alt="Sneakers and accessories section">
+                <img src="https://picsum.photos/id/1031/400/250" alt="In-store styling consultation">
+            </div>
+        </section>
+
+        <section>
+            <h2>Find Us</h2>
+            <div id="map" aria-label="Urban Threads store location"></div>
+        </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Urban Threads. All rights reserved.</p>
     </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
